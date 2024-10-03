@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, main, footer {
+    padding: 20px;
+    text-align: center; 
+}
+
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+
+main {
+
+    background-color: #fff;
+    margin: 20px auto; /* Center the main content */
+    max-width: 600px; /* Set a maximum width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    padding: 40px;
+    border-radius: 5px;
+
+
+}
+
+form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px); /* Adjust for padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+button {
+    background-color: #007bff;  /* Blue button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+footer {
+  background-color: #333;
+    color: #fff;
+}
+
+#about { /* Styles for the about section */
+    margin-top: 20px;
+    padding: 20px; /*  */
+    border-top: 1px solid #ddd;  /* Add a separator */
+
+}
+
+.alert { /* Styling for flash messages */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+
+
+.alert.success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+
+}
+
+.alert.info {
+  background-color: #cce5ff;
+  border: 1px solid #b8daff;
+  color: #004085;
+}

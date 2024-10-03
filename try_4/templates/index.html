@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Awesome Startup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Link to CSS -->
+</head>
+<body>
+    <header>
+        <h1>My Awesome Startup</h1>
+        <p>Revolutionizing the way you [brief description of what your startup does]</p>
+    </header>
+
+    <main>
+        <h2>Join the Waitlist</h2>
+
+         {% for category, message in get_flashed_messages(with_categories=true) %}
+            <div class="alert {{ category }}">{{ message }}</div>
+        {% endfor %}
+
+
+        <form method="POST" action="/">
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <button type="submit">Join Now</button>
+        </form>
+
+        <section id="about">  <!-- Added about section -->
+            <h3>About Us</h3>
+            <p>[More detailed information about your startup, its mission, etc.]</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Awesome Startup</p>
+    </footer>
+</body>
+</html>

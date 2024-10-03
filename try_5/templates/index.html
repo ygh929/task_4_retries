@@ -1,0 +1,25 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ startup_name }} Waitlist</title>
+    <link rel="stylesheet" href="static/style.css">  </head>
+<body>
+
+    <section class="hero">
+        <h1>{{ startup_name }}</h1>
+        <h2>{{ startup_tagline }}</h2>
+        <p>{{ startup_description }}</p>
+    
+        <form id="waitlist-form">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="fullName" placeholder="Your Full Name" required>
+            <button type="submit">Join Waitlist</button>
+        </form>
+        <div id="message"></div> </section>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
