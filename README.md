@@ -2,7 +2,7 @@
 
 This folder contains all scripts during the genration of task 4. In order to run them: 
 
-* Clone this git to local `git clone https://github.com/ygh929/task_4_retries.git` and `cd` to the root of this repository.
+* Clone this git repo to local `git clone https://github.com/ygh929/task_4_retries.git` and `cd` to the root of this repository.
 
 * (optional) create a venv with `python3 -m venv task_4_venv` and activate it with `source ./task_4_venv/bin/activate`
 
